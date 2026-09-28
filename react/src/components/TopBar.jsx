@@ -156,6 +156,11 @@ export function TopBar({
           )}
         </button>
 
+        {/* Link back to Vanilla version */}
+        <a className="btn btn-sm" href="../dashboard.html" title="Switch to Vanilla JS version">
+          Vanilla JS ↗
+        </a>
+
         {/* Profile */}
         <div className="dropdown-wrap">
           <div
