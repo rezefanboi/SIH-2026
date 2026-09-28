@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CartSence · Smarter decisions for everyday retail</title>
+  <meta name="description" content="CartSence is a professional retail intelligence system for real-time inventory, demand forecasting, waste reduction, and what-if scenario analysis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <button class="icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+      CartSence
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="dashboard.html">Command Center</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="forecast.html">Forecast</a>
+      <a href="waste.html">Waste Control</a>
+      <a href="sales.html">Sales</a>
+      <a href="what-if.html">What-If Scenarios</a>
+      <a href="assistant.html">Assistant</a>
+    </nav>
+    <div class="tools">
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle light and dark theme">
+        <svg viewBox="0 0 24 24" class="sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg viewBox="0 0 24 24" class="moon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a class="btn btn-primary" href="dashboard.html">Open dashboard</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Split Hero with Real Stock Imagery & Live Badges -->
+    <section class="hero">
+      <div class="hero-content">
+        <div style="display:inline-flex;align-items:center;gap:var(--space-2);margin-bottom:var(--space-3)">
+          <span class="live-indicator"><span class="live-dot"></span> Retail Intelligence Suite</span>
+          <span class="badge info">Trusted by 120+ Store Managers</span>
+        </div>
+        <h1>
+          Smarter decisions for <span class="accent-word">everyday retail</span>.
+        </h1>
+        <p>
+          CartSence helps store operators and retail managers predict demand surges, eliminate perishable waste, and protect revenue with evidence-based intelligence and real-time inventory telemetry.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="dashboard.html">Launch Command Center</a>
+          <a class="btn" href="what-if.html">Try What-If Scenarios</a>
+          <a class="btn" href="assistant.html">Ask AI Assistant</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="images/hero.jpg" alt="Modern supermarket aisle with smart inventory technology and tablet analytics" />
+        <div class="hero-badge-float">
+          <div>
+            <div style="font-weight:700;font-size:0.9375rem">Anna Nagar Store Telemetry</div>
+            <div class="meta">Live POS sync · 198 Active SKUs</div>
+          </div>
+          <span class="badge low">94% Stock Health</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Interactive Preview -->
+    <section class="preview">
+      <div class="card" style="box-shadow:var(--shadow-lg);border-color:var(--border-strong)">
+        <div class="card-head" style="border-bottom:1px solid var(--border);padding:var(--space-4)">
+          <div>
+            <h2>Live Command Center Preview</h2>
+            <p class="meta" style="margin-top:2px">Real-time inventory velocity & forecast telemetry</p>
+          </div>
+          <div style="display:flex;gap:var(--space-2);align-items:center">
+            <span class="live-indicator"><span class="live-dot"></span> Live Telemetry Active</span>
+            <a class="btn btn-sm btn-primary" href="dashboard.html">Full screen →</a>
+          </div>
+        </div>
+
+        <div style="padding:var(--space-4);display:grid;gap:var(--space-4);background:var(--surface-2)">
+          <div class="grid-4" style="margin-bottom:0">
+            <div class="card metric" style="background:var(--surface)">
+              <div class="muted">Sales today</div>
+              <div class="value">₹48,260</div>
+              <div class="delta up">+6.2% vs last week</div>
+            </div>
+            <div class="card metric" style="background:var(--surface)">
+              <div class="muted">Inventory on hand</div>
+              <div class="value">1,842 units</div>
+              <div class="delta">₹4.18L total value</div>
+            </div>
+            <div class="card metric" style="background:var(--surface)">
+              <div class="muted">At-risk inventory</div>
+              <div class="value" style="color:var(--danger)">₹12,840</div>
+              <div class="delta down">4 batches &lt; 5d</div>
+            </div>
+            <div class="card metric" style="background:var(--surface)">
+              <div class="muted">Open purchase orders</div>
+              <div class="value">7 active</div>
+              <div class="delta">2 arriving tomorrow</div>
+            </div>
+          </div>
+
+          <div class="grid-main" style="margin-bottom:0">
+            <div class="card" style="background:var(--surface)">
+              <div class="card-head">
+                <div>
+                  <h2>Demand velocity trajectory</h2>
+                  <p class="meta">Actual daily revenue vs model forecast</p>
+                </div>
+                <div class="legend">
+                  <span><i style="background:var(--chart-1)"></i>Actual</span>
+                  <span><i style="background:var(--chart-2)"></i>Forecast</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="chart" id="previewChart"></div>
+              </div>
+            </div>
+
+            <div class="card" style="background:var(--surface)">
+              <div class="card-head">
+                <h2>Critical stockout alerts</h2>
+              </div>
+              <ul class="list" style="border:none">
+                <li>
+                  <span class="dot high"></span>
+                  <div>
+                    <strong>Stockout risk: Milk 500ml</strong>
+                    <p class="muted">2.3 days cover. Supplier lead time 2 days.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="dot medium"></span>
+                  <div>
+                    <strong>Expiry risk: Greek Yogurt 400g</strong>
+                    <p class="muted">38 units expire in 3 days. Markdown suggested.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="dot info"></span>
+                  <div>
+                    <strong>Demand surge: Beverages</strong>
+                    <p class="muted">+27% surge due to Chennai heat advisory.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Feature Cards with Stock Photography -->
+    <section class="features-grid">
+      <div class="card" style="overflow:hidden">
+        <img class="feature-card-img" src="images/dairy.jpg" alt="Fresh dairy milk bottles and yogurt on supermarket shelf" />
+        <div style="padding:var(--space-4)">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+            <h3 style="font-size:1.125rem">Dairy & Perishable Control</h3>
+            <span class="badge high">High Velocity</span>
+          </div>
+          <p class="muted" style="line-height:1.5;font-size:var(--fs-body)">
+            Monitor milk, yogurt, and paneer with FEFO countdowns and automated 25% markdown recommendations before expiry.
+          </p>
+          <div style="margin-top:var(--space-3)">
+            <a class="btn btn-sm" href="waste.html">Inspect waste queue →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="overflow:hidden">
+        <img class="feature-card-img" src="images/bakery.jpg" alt="Artisanal freshly baked whole wheat bread loaves" />
+        <div style="padding:var(--space-4)">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+            <h3 style="font-size:1.125rem">Bakery & Fast Moving Goods</h3>
+            <span class="badge medium">Tight Buffer</span>
+          </div>
+          <p class="muted" style="line-height:1.5;font-size:var(--fs-body)">
+            Daily velocity tracking for bread, baguettes, and morning staples. Trigger batch reorders with supplier lead-time buffers.
+          </p>
+          <div style="margin-top:var(--space-3)">
+            <a class="btn btn-sm" href="inventory.html">View inventory catalog →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="overflow:hidden">
+        <img class="feature-card-img" src="images/hero.jpg" alt="Supermarket aisle with analytical tablet" />
+        <div style="padding:var(--space-4)">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+            <h3 style="font-size:1.125rem">What-If Scenario Engine</h3>
+            <span class="badge info">Predictive AI</span>
+          </div>
+          <p class="muted" style="line-height:1.5;font-size:var(--fs-body)">
+            Simulate 0% to +100% demand spikes for festival seasons or weather surges. Instantly see stockouts and revenue at risk.
+          </p>
+          <div style="margin-top:var(--space-3)">
+            <a class="btn btn-sm btn-primary" href="what-if.html">Run scenario →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="border-top:1px solid var(--border);padding:var(--space-6) var(--space-5);text-align:center;color:var(--text-3);font-size:var(--fs-meta)">
+    <p>CartSence Retail Intelligence · Built for clarity, trust, and business-critical operations.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/shell.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var el = document.querySelector("#previewChart");
+      if (el && typeof lineChart === "function" && window.CS) {
+        lineChart(el, {
+          label: "Landing preview chart",
+          labels: window.CS.days,
+          isCurrency: true,
+          format: function (v) { return "₹" + v.toLocaleString("en-IN"); },
+          series: [
+            { name: "Actual sales", values: window.CS.sales, color: "var(--chart-1)" },
+            { name: "Forecast", values: window.CS.forecast, color: "var(--chart-2)", dashed: true }
+          ]
+        });
+      }
+    });
+  </script>
+</body>
+</html>
